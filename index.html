@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Are+You+Serious&family=Cabin&family=Caveat&family=Comfortaa&family=Patrick+Hand&family=Redressed&family=Shizuru&family=Square+Peg&family=Tapestry&display=swap" rel="stylesheet">
+
+<title>Circle fun!</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body><center>
+	<img hidden onclick="sound()" id="unmusic" src="ummute.png">
+	<img onclick="sound()" id="music" src="mute.png">
+	<br>
+	<h1>Circle Fun!</h1>
+	<button id="reset" onclick="reset()">Clear</button>
+	<br><br>
+
+
+<canvas id="canvas" height="450" width="800"></canvas>
+
+
+<h3>Change It up!</h3>
+		Mode <select id="mode">
+			<option value="dot">Dot</option>
+			<option value="drag">Drag</option>
+			</select>
+        <button id="go" onclick="go()">Ok</button>
+	
+	<br>
+	Fill Color <input type="color" id="colorpicker" value="#0000ff">
+
+
+
+<script src="main.js"></script>
+<audio id="audio1" src="intro (1).mp3"></audio>
+</center></body>
+</html>
